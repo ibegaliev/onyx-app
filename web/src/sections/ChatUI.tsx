@@ -9,17 +9,44 @@ import React, {
   useRef,
   useState,
 } from "react";
+
 import IconButton from "@/refresh-components/buttons/IconButton";
-import { Message } from "@/app/chat/interfaces";
-import { OnyxDocument, MinimalOnyxDocument } from "@/lib/search/interfaces";
+
+import { 
+  Message
+} from "@/app/chat/interfaces";
+
+import {
+  OnyxDocument, 
+  MinimalOnyxDocument 
+} from "@/lib/search/interfaces";
+
 import HumanMessage from "@/app/chat/message/HumanMessage";
-import { ErrorBanner } from "@/app/chat/message/Resubmit";
-import { MinimalPersonaSnapshot } from "@/app/admin/assistants/interfaces";
-import { LlmDescriptor, LlmManager } from "@/lib/hooks";
+
+import {
+  ErrorBanner
+} from "@/app/chat/message/Resubmit";
+
+import {
+  MinimalPersonaSnapshot
+} from "@/app/admin/assistants/interfaces";
+
+import {
+  LlmDescriptor, LlmManager
+} from "@/lib/hooks";
+
 import AIMessage from "@/app/chat/message/messageComponents/AIMessage";
-import { ProjectFile } from "@/app/chat/projects/projectsService";
-import { useScrollonStream } from "@/app/chat/services/lib";
+
+import {
+  ProjectFile
+} from "@/app/chat/projects/projectsService";
+
+import { 
+  useScrollonStream
+} from "@/app/chat/services/lib";
+
 import useScreenSize from "@/hooks/useScreenSize";
+
 import {
   useCurrentChatState,
   useCurrentMessageHistory,
@@ -27,12 +54,26 @@ import {
   useLoadingError,
   useUncaughtError,
 } from "@/app/chat/stores/useChatSessionStore";
+
 import useChatSessions from "@/hooks/useChatSessions";
-import { useDeepResearchToggle } from "../app/chat/hooks/useDeepResearchToggle";
-import { useUser } from "@/components/user/UserProvider";
-import { HORIZON_DISTANCE_PX } from "@/lib/constants";
+
+import {
+  useDeepResearchToggle
+} from "../app/chat/hooks/useDeepResearchToggle";
+
+import {
+  useUser
+} from "@/components/user/UserProvider";
+
+import {
+  HORIZON_DISTANCE_PX
+} from "@/lib/constants";
+
 import Spacer from "@/refresh-components/Spacer";
-import { SvgChevronDown } from "@opal/icons";
+
+import {
+  SvgChevronDown
+} from "@opal/icons";
 
 export interface ChatUIHandle {
   scrollToBottom: () => boolean;
