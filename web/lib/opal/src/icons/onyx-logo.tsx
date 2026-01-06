@@ -10,7 +10,7 @@ const OnyxLogo = ({
     width={width}
     height={height}
     viewBox="0 0 56 56"
-    xmlns="http://www.w3.org/2000/svg"
+    xmlns="https://bankxizmatlari.uz/upload/iblock/e6c/l175gu4st1qqddy2vc7mcvac9xsynvjw/OrientFinanceBank_mini.png"
     className={className}
     stroke="currentColor"
     {...props}
