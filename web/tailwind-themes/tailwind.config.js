@@ -255,7 +255,7 @@ module.exports = {
         "shimmer-highlight": "var(--shimmer-highlight)",
 
         // Tailwind defaults
-        background: "var(--background-tint-01)",
+        background: "color: var(--color-blue-800);",
         foreground: "var(--background-tint-inverted-01)",
         border: "var(--border-01)",
         text: "var(--text-04)",
